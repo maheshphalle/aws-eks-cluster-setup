@@ -58,7 +58,7 @@ It will prompt you to enter:
 ### **Command to Create AWS Cluster**
 ```sh
 eksctl create cluster \
-  --name my-eks-cluster \
+  --name mahesh-eks-cluster \
   --region us-west-1 \
   --version 1.31 \
   --nodegroup-name standard-workers \
@@ -74,7 +74,7 @@ eksctl create cluster \
 ### **Modified Command with Custom VPC & Subnets**
 ```sh
 eksctl create cluster \
-  --name my-eks-cluster \
+  --name mahesh-eks-cluster \
   --region us-west-1 \
   --version 1.31 \
   --nodegroup-name standard-workers \
@@ -164,34 +164,12 @@ http://a284490c0df0f4b249da4879211ad7ae-1032939870.us-west-1.elb.amazonaws.com:3
 ## **8. Deleting the EKS Cluster**
 If needed, the cluster can be deleted to free resources.
 ```sh
-eksctl delete cluster --name my-eks-cluster --region us-west-1
+eksctl delete cluster --name mahesh-eks-cluster --region us-west-1
 ```
 
 ---
 
-## **9. Pushing This Documentation to GitHub**
-To upload this document to a GitHub repository:
 
-1. **Initialize a Git repository** (if not done already):
-   ```sh
-   git init
-   ```
-2. **Add the README file to the repository:**
-   ```sh
-   git add README.md
-   ```
-3. **Commit the changes:**
-   ```sh
-   git commit -m "Added detailed EKS setup documentation"
-   ```
-4. **Connect to GitHub repository (replace `<your-repo-url>`):**
-   ```sh
-   git remote add origin <your-repo-url>
-   ```
-5. **Push the file to GitHub:**
-   ```sh
-   git push -u origin main
-   ```
 
 ---
 
